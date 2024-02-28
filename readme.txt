@@ -8,6 +8,9 @@ create .env file in root directory
 and add env variables values 
 see example.env  file
 
+to get api key please visit below website and signUp
+https://www.weatherapi.com/
+
 then to run project use following command
 node index.js or 
 npm run start or
