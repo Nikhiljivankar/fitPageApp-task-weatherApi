@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "073ec2ff-fcf6-42d0-8c9e-cd56e9a46e37",
+		"name": "weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30836025",
+		"_collection_link": "https://gold-rocket-381779.postman.co/workspace/My-Workspace~07f3e8c9-d527-4afd-8963-d6321c915b45/collection/30836025-073ec2ff-fcf6-42d0-8c9e-cd56e9a46e37?action=share&source=collection_link&creator=30836025"
+	},
+	"item": [
+		{
+			"name": "location",
+			"item": [
+				{
+					"name": "get location",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"surat\",\r\n    \"latitude\": 21.1702,\r\n    \"longitude\": 72.8311\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/locations",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create location",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"surat\",\r\n    \"latitude\": 21.1702,\r\n    \"longitude\": 72.8311\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/locations",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get location by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"surat\",\r\n    \"latitude\": 21.1702,\r\n    \"longitude\": 72.8311\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/locations/65def7441b915c8327c5c978",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"locations",
+								"65def7441b915c8327c5c978"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update location by id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"surat\",\r\n    \"latitude\": 21.1702,\r\n    \"longitude\": 72.8311\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/locations/65def7441b915c8327c5c978",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"locations",
+								"65def7441b915c8327c5c978"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete location by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"surat\",\r\n    \"latitude\": 21.1702,\r\n    \"longitude\": 72.8311\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/locations/65def7441b915c8327c5c978",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"locations",
+								"65def7441b915c8327c5c978"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "weather",
+			"item": [
+				{
+					"name": "get weather",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"surat\",\r\n    \"latitude\": 21.1702,\r\n    \"longitude\": 72.8311\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/weather/65def89788c855a9c6cd2400",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"weather",
+								"65def89788c855a9c6cd2400"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "weatherapi.com",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.weatherapi.com/v1/current.json?q=21.18,72.83&key=96773a07d4464bc889c82936242802",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weatherapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"current.json"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "21.18,72.83"
+						},
+						{
+							"key": "key",
+							"value": "96773a07d4464bc889c82936242802"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "historyapi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.weatherapi.com/v1/history.json?q=21.18,72.83&dt=2024-02-26&key=96773a07d4464bc889c82936242802",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weatherapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"history.json"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "21.18,72.83"
+						},
+						{
+							"key": "dt",
+							"value": "2024-02-26"
+						},
+						{
+							"key": "key",
+							"value": "96773a07d4464bc889c82936242802"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
